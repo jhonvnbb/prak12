@@ -23,10 +23,10 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap
  </form>
  <?php
  if (isset($_POST['simpan'])) {
- $nama = $_POST['nama'];
+ $namaa = $_POST['nama'];
  $nim = $_POST['nim'];
  mysqli_query($conn, "INSERT INTO mahasiswa (nama, nim) VALUES
-('$nama', '$nim')");
+('$namaa', '$nim')");
  echo "<div class='alert alert-success mt-3'>Data berhasil
 disimpan.</div>
  <script>
