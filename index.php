@@ -17,21 +17,21 @@ Mahasiswa</a>
  </thead>
     <tbody>
     <?php
-    $no = 1;
-    $result = mysqli_query($conn, "SELECT * FROM mahasiswa");
-    while ($row = mysqli_fetch_assoc($result)) {
-    echo "<tr>
-    <td>$no</td>
-    <td>{$row['nama']}</td>
-    <td>{$row['nim']}</td>
-    <td>
-    <a href='edit.php?id={$row['id']}' class='btn btnwarning btn-sm'>Edit</a>
-    <a href='hapus.php?id={$row['id']}' class='btn btndanger btn-sm' onclick='return confirm(\"Hapus data
-    ini?\")'>Hapus</a>
-    </td>
-    </tr>";
-    $no++;
-    }
+        $no = 1;
+        $result = mysqli_query($conn, "SELECT * FROM mahasiswa");
+        while ($row = mysqli_fetch_assoc($result)) {
+        echo "<tr>
+        <td>$no</td>
+        <td>{$row['nama']}</td>
+        <td>{$row['nim']}</td>
+        <td>
+        <a href='edit.php?id={$row['id']}' class='btn btnwarning btn-sm'>Edit</a>
+        <a href='hapus.php?id={$row['id']}' class='btn btndanger btn-sm' onclick='return confirm(\"Hapus data
+        ini?\")'>Hapus</a>
+        </td>
+        </tr>";
+        $no++;
+        }
     ?>
     </tbody>
  </table>
