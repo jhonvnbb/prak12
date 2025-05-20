@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "pemweb_db ";
+$db = "crud";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 
